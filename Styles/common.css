@@ -1,0 +1,85 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --quick-silver-color: #a6a6a6;
+    --lime-green-color: #7AB226;
+}
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header styles */
+.header {
+    margin: 0;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 30px;
+    background-color: var(--quick-silver-color);
+}
+
+/* Header scroll effect */
+.header-scroll {
+    background-color: var(--quick-silver-color);
+}
+
+/* Header container styles */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+/* Header navigation list styles */
+.header-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Header navigation link styles */
+.header-a {
+    position: relative;
+    margin: 0 5px;
+    padding: 8px;
+    font-size: 20px;
+    color: var(--black-color);
+    transition: color 0.3s ease;
+}
+
+/* Header navigation link hover effect */
+.header-a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--black-color);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Header navigation link hover effect */
+.header-a:hover::after {
+    width: calc(100% - 16px);
+    left: 8px;
+}
+/* Main section styles */
+.main-section {
+    margin: 70px 0 20px 0;
+    padding: 20px;
+}
