@@ -244,3 +244,40 @@
     color: var(--black-color);
     margin-left: 8px;
 }
+
+.aboutme-section {
+    width: 90%;
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.aboutme-section-header {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--black-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.aboutme-section-header::before,
+.aboutme-section-header::after {
+    flex: 1;
+    content: '';
+    padding: 1px;
+    background-color: var(--black-color);
+    margin: 5px;
+}
+
+.aboutme-img {
+    height: 50px;
+    width: 50px;
+}
+
+.aboutme-desc {
+    margin: 50px 0;
+    font-size: 16px;
+    color: var(--black-color);
+    line-height: 1.5;
+}
