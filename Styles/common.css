@@ -247,7 +247,8 @@
 }
 
 .aboutme-section,
-.experience-education-section-header {
+.experience-education-section,
+.skills-proficiencies-section {
     margin: 30px 0;
     padding: 10px;
 }
@@ -258,7 +259,8 @@
 }
 
 .aboutme-section-header,
-.experience-education-section-header {
+.experience-education-section-header,
+.skills-proficiencies-section-header {
     font-size: 30px;
     font-weight: 700;
     color: var(--black-color);
@@ -270,6 +272,8 @@
 
 .aboutme-section-header::before,
 .aboutme-section-header::after,
+.skills-proficiencies-section-header::before,
+.skills-proficiencies-section-header::after,
 .experience-education-section-header::before,
 .experience-education-section-header::after {
     flex: 1;
@@ -279,14 +283,16 @@
     margin: 5px;
 }
 
-.experience-education-section-desc {
+.experience-education-section-desc,
+.skills-proficiencies-section-desc {
     font-size: 14px;
     text-align: center;
     color: var(--black-color);
     padding-bottom: 20px;
 }
 
-.aboutme-img {
+.aboutme-img,
+.skills-img {
     height: 50px;
     width: 50px;
 }
@@ -297,11 +303,13 @@
     color: var(--black-color);
     line-height: 1.5;
 }
-.experience-education-container{
+
+.experience-education-container {
     display: flex;
     justify-content: space-around;
     gap: 20px;
 }
+
 .experience-education-box {
     width: 90%;
     padding: 10px;
@@ -311,7 +319,8 @@
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-.experience-education-box:hover{
+
+.experience-education-box:hover {
     transform: scale(1.01);
 }
 
