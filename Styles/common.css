@@ -355,3 +355,23 @@
     color: var(--black-color);
     margin-bottom: 10px;
 }
+
+.skills-proficiencies-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-header {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--black-color);
+    margin: 20px 0;
+}
+
+.skills-li {
+    margin: 10px;
+    font-size: 20px;
+    color: var(--black-color);
+    list-style-type: square;
+
+}
