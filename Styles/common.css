@@ -248,18 +248,21 @@
 
 .aboutme-section,
 .experience-education-section,
+.key-project-section,
 .skills-proficiencies-section {
     margin: 30px 0;
     padding: 10px;
 }
 
-.experience-education-section {
+.experience-education-section,
+.key-project-section {
     background-color: var(--quick-silver-color);
     border-radius: 10px;
 }
 
 .aboutme-section-header,
 .experience-education-section-header,
+.key-project-section-header,
 .skills-proficiencies-section-header {
     font-size: 30px;
     font-weight: 700;
@@ -274,6 +277,8 @@
 .aboutme-section-header::after,
 .skills-proficiencies-section-header::before,
 .skills-proficiencies-section-header::after,
+.key-project-section-header::before,
+.key-project-section-header::after,
 .experience-education-section-header::before,
 .experience-education-section-header::after {
     flex: 1;
@@ -284,6 +289,7 @@
 }
 
 .experience-education-section-desc,
+.key-project-section-desc,
 .skills-proficiencies-section-desc {
     font-size: 14px;
     text-align: center;
@@ -292,6 +298,7 @@
 }
 
 .aboutme-img,
+.key-project-img,
 .skills-img {
     height: 50px;
     width: 50px;
@@ -374,4 +381,42 @@
     color: var(--black-color);
     list-style-type: square;
 
+}
+
+.key-project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.key-project-content {
+    width: 300px;
+    height: 220px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid var(--gray-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.key-project-content:hover {
+    transform: scale(1.01);
+}
+
+.key-project-content-img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.key-project-header {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.key-project-year {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--black-color);
 }
