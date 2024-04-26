@@ -249,6 +249,7 @@
 .aboutme-section,
 .experience-education-section,
 .key-project-section,
+.work-section,
 .skills-proficiencies-section {
     margin: 30px 0;
     padding: 10px;
@@ -263,6 +264,7 @@
 .aboutme-section-header,
 .experience-education-section-header,
 .key-project-section-header,
+.work-section-header,
 .skills-proficiencies-section-header {
     font-size: 30px;
     font-weight: 700;
@@ -279,6 +281,8 @@
 .skills-proficiencies-section-header::after,
 .key-project-section-header::before,
 .key-project-section-header::after,
+.work-section-header::before,
+.work-section-header::after,
 .experience-education-section-header::before,
 .experience-education-section-header::after {
     flex: 1;
@@ -299,6 +303,7 @@
 
 .aboutme-img,
 .key-project-img,
+.work-section-img,
 .skills-img {
     height: 50px;
     width: 50px;
@@ -418,5 +423,39 @@
 .key-project-year {
     font-size: 16px;
     font-style: italic;
+    color: var(--black-color);
+}
+
+.work-container {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.work-content {
+    width: 400px;
+    height: 180px;
+    padding: 8px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--quick-silver-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.work-content:hover {
+    transform: scale(1.05);
+}
+
+.work-img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+}
+.work-text{
+    font-size: 20px;
+    font-weight: 700;
     color: var(--black-color);
 }
