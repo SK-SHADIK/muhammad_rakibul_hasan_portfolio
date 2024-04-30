@@ -16,7 +16,15 @@ function toggleHeaderBackground() {
 // Event listener for scroll event to trigger toggleHeaderBackground function
 window.addEventListener('scroll', toggleHeaderBackground);
 
+//SCROLL POSITION
+window.onscroll = function () { myFunction() };
 
+function myFunction() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
 
 // Contact Form
 
