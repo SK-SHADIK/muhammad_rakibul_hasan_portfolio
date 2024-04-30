@@ -561,3 +561,128 @@
     width: 0%;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 1340px) {
+    .header{
+        height: 80px;
+    }
+    .header-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main-section{
+        margin: 100px 0 10px 0;
+    }
+    .header-a{
+        padding: 5px;
+        font-size: 14px;
+    }
+    .key-project-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .work-content{
+        width: 300px;
+    }
+    .main-banner-section{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .key-project-container,
+    .work-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 880px) {
+    .contact-form{
+        max-width: 85%;
+    }
+    .experience-education-container{
+        flex-direction: column;
+    }
+
+    .key-project-container,
+    .work-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .key-project-content,
+    .work-content {
+        width: 95%;
+    }
+    .header-a{
+        margin: 2px;
+        font-size: 8px;
+    }
+    .footer{
+        padding: 0;
+    }
+    .section-container{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-main-text,
+    .banner-sub-text,
+    .banner-subs-text{
+        text-align: center;
+    }
+    .banner-buttons{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .banner-icons{
+        justify-content: center;
+    }
+    .banner-experience{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skills-proficiencies-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-center{
+        padding-top: 30px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .experience-education-year{
+        font-size: 16px;
+    }
+    .experience-education-year-img{
+        height: 14px;
+        width: 14px;
+    }
+    .experience-education-title{
+        font-size: 16px;
+    }
+    .experience-education-company{
+        font-size: 12px;
+    }
+    .experience-education-desc{
+        font-size: 10px;
+    }
+    .header-a {
+        padding: 2px;
+    }
+    .banner-images{
+        width: 95%;
+    }
+    .main-section{
+        padding: 2px;
+    }
+    .experience-education-box{
+        padding: 2px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .header-a{
+        font-size: 6px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+}
