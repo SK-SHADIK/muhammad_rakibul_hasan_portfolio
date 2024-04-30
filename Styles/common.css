@@ -666,6 +666,10 @@
         padding-top: 30px;
     }
 
+    .footer-text {
+        font-size: 8px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -705,14 +709,16 @@
     .experience-education-box {
         padding: 2px;
     }
-}
 
-@media screen and (max-width: 380px) {
     .header-a {
         font-size: 6px;
     }
 
     .logo {
         font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 6px;
     }
 }
